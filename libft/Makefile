@@ -6,7 +6,7 @@
 #    By: kvebers <kvebers@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 12:50:10 by kvebers           #+#    #+#              #
-#    Updated: 2022/11/04 15:59:22 by kvebers          ###   ########.fr        #
+#    Updated: 2022/11/07 12:14:39 by kvebers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ SRC =	ft_isalnum.c ft_isprint.c ft_isdigit.c ft_atoi.c ft_bzero.c \
 		ft_putnbr_fd.c ft_striteri.c \
 		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstadd_back.c \
 		ft_lstlast.c ft_lstdelone.c ft_lstiter.c ft_lstclear.c ft_lstmap.c
-
-CC = 		gcc
+		
+CC = 		cc
 CFLAG =		-Wall	 -Wextra	 -Werror
 RM = 		rm -f
 NAME = 		libft.a
@@ -34,7 +34,7 @@ $(NAME): $(OBJ)
 	@$(CC) -c $(CFLAG) $< -o $@
 
 clean:
-	- @$(RM) $(OBJ) 
+	- @$(RM) $(OBJ)
 
 fclean: clean
 	- @$(RM) ${NAME}

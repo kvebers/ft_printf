@@ -6,15 +6,15 @@
 /*   By: kvebers <kvebers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:32:36 by kvebers           #+#    #+#             */
-/*   Updated: 2022/11/04 16:40:41 by kvebers          ###   ########.fr       */
+/*   Updated: 2022/11/07 12:04:39 by kvebers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-int ft_printf(int C)
+int	ft_printf(int C)
 {
-	if (C >= 'A' && C <= 'Z')
-		C = C + 32;
-	return (C);
+	if (C >= '0' && C <= '9')
+		return (1);
+	if ((C >= 'a' && C <= 'z') || (C >= 'A' && C <= 'Z'))
+		return (1);
+	return (0);
 }
