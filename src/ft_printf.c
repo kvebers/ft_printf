@@ -6,15 +6,15 @@
 /*   By: kvebers <kvebers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:32:36 by kvebers           #+#    #+#             */
-/*   Updated: 2022/11/10 16:18:03 by kvebers          ###   ########.fr       */
+/*   Updated: 2022/11/10 16:53:54 by kvebers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-int ft_lunch_args(const char str, va_list args)
+int	ft_lunch_args(const char str, va_list args)
 {
-	int args_len;
+	int	args_len;
 
 	args_len = 0;
 	if (str == 'c')
@@ -38,7 +38,7 @@ int ft_lunch_args(const char str, va_list args)
 	return (args_len);
 }
 
-int ft_printf(const char *str, ...)
+int	ft_printf(const char *str, ...)
 {
 	va_list	args;
 	int		out_len;
