@@ -6,11 +6,12 @@
 #    By: kvebers <kvebers@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/05 14:56:20 by kvebers           #+#    #+#              #
-#    Updated: 2022/11/07 12:14:29 by kvebers          ###   ########.fr        #
+#    Updated: 2022/11/10 16:10:43 by kvebers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC =	src/ft_printf.c
+SRC =	src/ft_printf.c src/ft_putstr.c src/ft_putchar.c src/ft_putdeca.c \
+		src/ft_puthex.c src/ft_putunsigned.c src/ft_putptr.c
 
 CC = 		cc
 CFLAG =		-Wall	 -Wextra	 -Werror
